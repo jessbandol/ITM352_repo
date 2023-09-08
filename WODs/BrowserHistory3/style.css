@@ -1,0 +1,40 @@
+body {
+    color: darkblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-size-adjust: 950px;
+    background-color: ivory;
+}
+
+h1,h2 {
+    font-family: Oswald;
+}
+
+p,li {
+    font-family: 'Open Sans';
+}
+
+Img {
+    float: left;
+    margin-right: 10px;
+}
+
+nav li {
+    display: inline-block;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+nav ul{
+    text-align: center;
+    padding: 0px;
+}
+
+.center {
+    float: none;
+    display: inline-table;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: .5cm;
+}

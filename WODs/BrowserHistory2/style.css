@@ -1,0 +1,22 @@
+body {
+    color: darkblue;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-size-adjust: 950px;
+    background-color: ivory;
+}
+
+h1,h2 {
+    font-family: Oswald;
+}
+
+p,li {
+    font-family: 'Open Sans';
+}
+
+Img {
+    float: left;
+    margin-right: 10px;
+}
