@@ -23,18 +23,18 @@ Img {
 
 nav li {
     display: inline-block;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
-nav ul{
+ul {
     text-align: center;
-    padding: 0px;
+}
+
+td {
+    width: 300px;
 }
 
 .center {
-    float: none;
-    display: inline-table;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: .5cm;
+    margin-left: auto;
+    margin-right: auto;
 }
