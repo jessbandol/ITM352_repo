@@ -6,7 +6,7 @@ I am Jess, an international student from the Philippines. I like to make **cute*
 
 ## WOD Assignments
 [BroswerHistory6](WODs/BrowserHistory6/index.html)
-[WOD 5] (WODs/SmartPhoneProducts1_1_variables/SmartPhoneProducts1_1/products_display.html)
+[WOD 5](WODs/SmartPhoneProducts1_1_variables/SmartPhoneProducts1_1/products_display.html)
 
 ## Lab Assignments
 + [Lab3](Lab3/SmartPhoneProducts1_1/index.html)
