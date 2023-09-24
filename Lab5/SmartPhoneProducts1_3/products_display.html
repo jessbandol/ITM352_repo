@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smartphone Products</title>
+    <p style="text-align: center; font-weight: bold;">
+        Hits:<span id="hits_span">0</span>
+        Spins:<span id="spins_span">0</span>
+        Hit/Spin:<span id="hit_spin_span">0</span>
+    </p>
+    <link href="products-style.css" rel="stylesheet" type="text/css">
+    <script>
+        var first_name="Jess";
+        var last_name="Bandol's";
+        var formattedName='<span style="font-size: 100px;"><b>' + first_name + '</b> <i>' + last_name + '</i></span>';
+        var initials = `${first_name[0]}.${last_name[0]}.`; 
+        var now = new Date();
+        var year = now.getFullYear();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var hours12 = (hours + 11) % 12 + 1;
+        var am_pm = (hours < 12) ? 'AM' : 'PM';
+        var formattedTime = `${hours12}:${minutes.toString().padStart(2, '0')} ${am_pm}`;
+    </script>
+</head>
+
+<body onload="hits_span.innerHTML = hits; spins_span.innerHTML = spins;">
+    <br>
+    <h1>
+    <script>
+        document.write(formattedName+"<br>Used Smartphone Store");
+    </script>   
+    </h1>
+    
+    <div>
+    <main>
+    <section class="item" onmouseover="changeClassName(this); spins_span.innerHTML=spins++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);" onclick="resetClassName(this); hits_span.innerHTML=hits++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);">
+        <h2>HTC</h2>
+        <p>&dollar;40.00</p>
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/HTC.jpg" alt="HTC Phones">
+    </section>
+
+    <section class="item" onmouseover="changeClassName(this); spins_span.innerHTML=spins++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);" onclick="resetClassName(this); hits_span.innerHTML=hits++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);">
+        <h2>Apple</h2>
+        <p>&dollar;75.00</p>
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/iphone-3gs.jpg">
+    </section>
+
+    <section class="item" onmouseover="changeClassName(this); spins_span.innerHTML=spins++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);" onclick="resetClassName(this); hits_span.innerHTML=hits++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);">
+        <h2>Nokia</h2>
+        <p>&dollar;35.00</p>
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/Nokia.jpg">
+    </section>
+
+    <section class="item" onmouseover="changeClassName(this); spins_span.innerHTML=spins++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);" onclick="resetClassName(this); hits_span.innerHTML=hits++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);">
+        <h2>Samsung</h2>
+        <p>&dollar;45.00</p>
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/Samsung.jpg">
+    </section>
+   
+    <section class="item" onmouseover="changeClassName(this); spins_span.innerHTML=spins++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);" onclick="resetClassName(this); hits_span.innerHTML=hits++; hit_spin_span.innerHTML=(hits/spins).toFixed(2);">
+        <h2>Blackberry</h2>
+        <p>&dollar;10.00</p>
+        <img src="http://dport96.github.io/ITM352/morea/080.flow-control-II/Blackberry.jpg">
+    </section>
+
+    </main>
+    </div>
+    <script>
+        function changeClassName(element) {
+            element.className='item rotate';
+        }
+        function resetClassName(element) {
+            element.className='item';
+        }
+        let hits=0;
+        let spins=0;
+        hits_span.innerHTML = hits;
+        spins_span.innerHTML = spins;
+    </script>
+</body>
+<footer>
+    <script> document.write(` 
+    <table border="1" style="margin-left: auto; margin-right: auto; text-align: center;">
+        <tr><th colspan="2"><h1>Your One Stop For Used Phones - ${initials}'s</h1></th></tr>
+        <tr><td>1.</td><td><br />Copyright @ Jess Bandol</td></tr>
+        <tr><td>2.</td><td>${year}</td></tr>
+        <tr><td>3.</td><td>${formattedTime}</td></tr>
+    </table>
+    `);
+    </script>
+</footer>
+</html>
