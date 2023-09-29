@@ -1,0 +1,9 @@
+td, th {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+}
+
+.subtotal-row td {
+    padding-top: 30px;
+}
