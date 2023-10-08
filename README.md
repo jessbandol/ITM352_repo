@@ -16,3 +16,4 @@ I am Jess, an international student from the Philippines. I like to make **cute*
 + [Lab6](Lab6/SmartPhoneProducts1_4/products_display.html)
 + [Lab6d](Lab6/SmartPhoneProducts1_4/lab6d.html)
 + [Poke6](Invoice1/invoice.html)
++ [Lab7](Lab7/lab7.html)
