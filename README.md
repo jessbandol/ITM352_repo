@@ -22,3 +22,4 @@ I am Jess, an international student from the Philippines. I like to make **cute*
 + [Lab8 part 4a](Lab8/lab8ex4a.html)
 + [Lab8 part 4b](Lab8/lab8ex4b.html)
 + [Lab8 part 4c](Lab8/lab8ex4c.html)
++ [Poke8](Poke8/SmartPhoneProducts2/products_displayPOKE8.html)
