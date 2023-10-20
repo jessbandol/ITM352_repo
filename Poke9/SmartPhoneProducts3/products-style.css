@@ -1,0 +1,45 @@
+/* General */
+body {
+  width: 801px;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1, h2 {
+  text-align: center;
+}
+
+/* Block Styling */
+.main {
+  background: url("Images/phone_globe.jpg");
+  color: black;
+}
+
+/* Styling the products display */
+.item img {
+  width: 200px;
+  height:200px;
+}
+
+/* Div children of body */
+body > div {
+  border: 5px solid black;
+  display: flex;
+}
+.rotate {
+  animation: rotation .3s infinite linear;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(359deg);
+}
+}
+
+#productsTable td {
+  text-align: center;
+  vertical-align: middle; /* This will vertically center the content in the cell */
+}
