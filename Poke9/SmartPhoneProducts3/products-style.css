@@ -1,6 +1,6 @@
 /* General */
 body {
-  width: 801px;
+  width: 800px;
   margin: 0 auto;
 }
 
@@ -24,7 +24,6 @@ h1, h2 {
 /* Div children of body */
 body > div {
   border: 5px solid black;
-  display: flex;
 }
 .rotate {
   animation: rotation .3s infinite linear;
@@ -39,7 +38,27 @@ to {
 }
 }
 
-#productsTable td {
+#productsTable tbody td {
   text-align: center;
-  vertical-align: middle; /* This will vertically center the content in the cell */
+  vertical-align: middle;
+}
+
+#productsTable {
+  width: 100%;
+}
+
+#productsTable tbody {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center rows horizontally */
+}
+
+#productsTable tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly; /* Distribute products evenly in the row */
+}
+
+.center-row {
+  justify-content: center; /* Center the two products in the bottom row */
 }

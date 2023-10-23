@@ -197,3 +197,30 @@ const footerTable = `
 `;
 
 bottom_title.innerHTML = footerTable;
+
+
+FOR CSS
+#productsTable tbody td {
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  #productsTable {
+    width: 100%;
+  }
+  
+  #productsTable tbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center rows horizontally */
+  }
+  
+  #productsTable tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly; /* Distribute products evenly in the row */
+  }
+  
+  .center-row {
+    justify-content: center; /* Center the two products in the bottom row */
+  }
