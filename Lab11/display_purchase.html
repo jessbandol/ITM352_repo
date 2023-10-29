@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Your Purchase!</title>
+    <script>
+        // Capture the query string parameters
+        let params = (new URL(document.location)).searchParams;
+
+        window.onload = function() {
+            // Check if the query string has the key "qty_textbox"
+            if (params.has("qty_textbox")) {
+                // Get the value for "qty_textbox"
+                let quantity = params.get("qty_textbox");
+
+                // Display the thank you message with the quantity
+                document.body.innerHTML = `Thank you for ordering ${quantity} things!`;
+            } else {
+                // If "qty_textbox" is not present in the query string, display an error message
+                document.body.innerHTML = "Error: Quantity not specified!";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- The body will remain empty as we will dynamically populate it using JavaScript -->
+    <input type="text" name="qty_textbox">
+    <form name="qty_form" action="display_purchase.html" method="GET">
+        <input type="text" name="qty_textbox">
+        <input type="submit" value="Purchase">
+    </form>
+</body>
+
+</html>
