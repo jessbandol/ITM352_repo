@@ -1,0 +1,104 @@
+/* General */
+body {
+  width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+h1, h2 {
+  text-align: center;
+}
+
+/* Block Styling */
+.main {
+  position: relative; /* Makes sure the pseudo-element positions relative to this */
+}
+
+.main::before {
+  content: ""; /* Necessary for the pseudo element to show */
+  background: url("Images/phone_globe.jpg");
+  opacity: 0.5; /* Adjust this value to your preference, 0.5 makes it 50% transparent */
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; /* Puts the background behind the content of .main */
+}
+
+/* Styling the products display */
+.item img {
+  width: 220px;
+  height:200px;
+}
+
+/* Div children of body */
+body > div {
+  border: 5px solid black;
+}
+.rotate {
+  animation: rotation .3s infinite linear;
+}
+
+@keyframes rotation {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(359deg);
+}
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2px;
+}
+
+.item:nth-child(5) {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-bottom: 45px; 
+}
+
+
+.item {
+  display: flex;
+  flex-direction: column;  /* stack children vertically */
+  align-items: center;     /* center children horizontally */
+  justify-content: center; /* center children vertically */
+}
+
+/* If your images aren't already centered by default, you can add this */
+.item img {
+  align-self: center;
+}
+
+.purchase-btn {
+  border: none; 
+  background-color: rgb(190, 51, 255);    
+  border-radius: 20px;
+  display: block;          /* Makes the button a block element so it occupies its own line */
+  margin: 20px auto;       /* Vertical margin of 20px and auto horizontal margin to center it */
+  font-size: 24px;         /* Larger font size */
+  padding: 10px 20px;      /* Padding around the button to make it bigger */
+  width: 200px;            /* You can set a specific width if needed */
+  text-align: center;      /* Ensures text inside the button is centered */
+  color: rgb(251, 253, 255);
+  font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.purchase-btn:hover {
+  background-color: rgb(222, 170, 247);  /* Sets a darker blue as background on hover */
+  color: rgb(103, 26, 139);              /* Keeps text color white */
+}
+
+.item h2 {
+  margin: 0; /* Removes any default margin */
+  margin-bottom: 5px; /* Add a bit of margin at the bottom, adjust to your liking */
+  margin-top: 45px;
+}
+
+.item p {
+  margin: 0; /* Removes any default margin */
+}
