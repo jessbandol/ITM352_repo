@@ -39,5 +39,5 @@ I am Jess, an international student from the Philippines. I like to make **cute*
 + [Lab12 pt2cjs](Lab12/svr2c.js)
 + [Lab12 pt3js](Lab12/svr3.js)
 + [Lab12 pt4js](Lab12/svr4.js)
-+ [Lab12 pt5]
++ [Lab12 pt5](Lab12/public/receipt.html)
 + [Lab12 pt5js](Lab12/svr5.js)
